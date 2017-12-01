@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3703A2AE34E9212041FF83 /* Pods_HeliXplore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFDF7E3CD479BCBBDDFDBE6 /* Pods_HeliXplore.framework */; };
 		A5844A081FD140EF00188488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5844A071FD140EF00188488 /* AppDelegate.swift */; };
 		A5844A0A1FD140EF00188488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5844A091FD140EF00188488 /* ViewController.swift */; };
 		A5844A0D1FD140EF00188488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5844A0B1FD140EF00188488 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BFDF7E3CD479BCBBDDFDBE6 /* Pods_HeliXplore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeliXplore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8207C55AEF2200C574815FDB /* Pods-HeliXplore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeliXplore.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-HeliXplore/Pods-HeliXplore.debug.xcconfig"; sourceTree = "<group>"; };
 		A5844A041FD140EF00188488 /* HeliXplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeliXplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5844A071FD140EF00188488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5844A091FD140EF00188488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		A5844A131FD140EF00188488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5844A191FD1443700188488 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A5844A1B1FD145D900188488 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BBE85A6F4A90BD5491B9ABE9 /* Pods-HeliXplore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeliXplore.release.xcconfig"; path = "../Pods/Target Support Files/Pods-HeliXplore/Pods-HeliXplore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3703A2AE34E9212041FF83 /* Pods_HeliXplore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		516C10E9A4A5A149A5CDA1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8207C55AEF2200C574815FDB /* Pods-HeliXplore.debug.xcconfig */,
+				BBE85A6F4A90BD5491B9ABE9 /* Pods-HeliXplore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A58449FB1FD140EF00188488 = {
 			isa = PBXGroup;
 			children = (
 				A5844A061FD140EF00188488 /* HeliXplore */,
 				A5844A051FD140EF00188488 /* Products */,
+				516C10E9A4A5A149A5CDA1D2 /* Pods */,
+				FFDB052A9C622BBE39841473 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,14 @@
 			path = HeliXplore;
 			sourceTree = "<group>";
 		};
+		FFDB052A9C622BBE39841473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BFDF7E3CD479BCBBDDFDBE6 /* Pods_HeliXplore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5844A161FD140EF00188488 /* Build configuration list for PBXNativeTarget "HeliXplore" */;
 			buildPhases = (
+				DDB0E71F4637000DC0151F91 /* [CP] Check Pods Manifest.lock */,
 				A5844A001FD140EF00188488 /* Sources */,
 				A5844A011FD140EF00188488 /* Frameworks */,
 				A5844A021FD140EF00188488 /* Resources */,
+				C254ADDDEB42FBCD12FBEA5C /* [CP] Embed Pods Frameworks */,
+				7080F45ED1448AECFD0D5F4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7080F45ED1448AECFD0D5F4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-HeliXplore/Pods-HeliXplore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C254ADDDEB42FBCD12FBEA5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-HeliXplore/Pods-HeliXplore-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-HeliXplore/Pods-HeliXplore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDB0E71F4637000DC0151F91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeliXplore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5844A001FD140EF00188488 /* Sources */ = {
@@ -219,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -270,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -280,6 +363,7 @@
 		};
 		A5844A171FD140EF00188488 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8207C55AEF2200C574815FDB /* Pods-HeliXplore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +379,7 @@
 		};
 		A5844A181FD140EF00188488 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE85A6F4A90BD5491B9ABE9 /* Pods-HeliXplore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
